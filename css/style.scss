@@ -1,36 +1,91 @@
 //AHeader aaron
+* {
+  font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
 
-.hamb-button {
-  width: 50px;
-  height: 50px;
-  display: block;
-  border: 1px solid #333;
-  border-radius: 5px;
-  &:hover {
+}
+
+$very-light-grey:#EEF0F1;
+$light-grey:#E2E4E6;
+$primary-blue:#3b49df;
+
+
+
+.wrap-nav {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  border-bottom: 2px solid $light-grey;
+
+  .left-wrap {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+
+    .logo-icon {
+      margin-left: 15px;
+      width: 45px;
+    }
+  }
+
+  .right-wrap {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+
+    img {
+      margin-right: 25px;
+    }
+
+    &:last-of-type {
+      margin-right: 0
+    }
+
+    .profile-photo {
+      border-radius: 50%;
+      width: 35px;
+    }
+  }
+}
+
+.wrap-header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $very-light-grey;
+
+  :first-child > h1 {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  :last-child > button {
+    background-color: white;
+    width: 80px;
+    height: 40px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+    
+    &:hover {
       cursor: pointer;
+    }
   }
-  &:before {
-      content: "";
-      width: 60%;
-      display: block;
-      height: 2px;
-      background-color: #333;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 14px;
-      box-shadow: 0px 10px 0 0 #333, 0px 20px 0 0 #333;
-  }
+
 }
 
-.display-mobile, .frequency-menu, .serch-menu  {
-  display: none;
-}
 
-input[type="checkbox"] {
+
+
+.display-desktop  {
   display: none;
-  &:checked + .display-mobile {
-      display: block;
-  }
 }
 
 
@@ -304,5 +359,5 @@ input[type="checkbox"] {
 
 aside {
   background:#aaa;
-  
+
 }
