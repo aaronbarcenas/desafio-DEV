@@ -6,139 +6,163 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DEV Maquetado</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg" sizes="32x32" href="images/logo-icon.svg">
 </head>
 
 <body>
 
   <header>
 
-    <div class="mobile wrap-nav">
+    <div id="navbar">
+      <div class="mobile wrap-nav">
 
-      <div class="left-wrap">
-        <img src="images/hamburger-icon.svg" alt="hamburger-icon">
-        <img class="logo-icon" src="images/devto.svg" alt="logo-icon">
-      </div>
-
-      <div class="right-wrap">
-        <img src="images/lupa-icon.svg" alt="lupa-icon">
-        <img src="images/message-icon.svg" alt="write-icon">
-        <img src="images/bell-icon.svg" alt="bell-icon">
-        <img class="profile-photo" src="https://res.cloudinary.com/practicaldev/image/fetch/s--jl25ieQ4--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/570253/d305dc25-89e7-4959-bba9-f85ff315a1c7.jpeg" alt="">
-      </div>
-
-    </div>
-
-    <div class="mobile wrap-header">
-
-      <div>
-        <h1>Posts</h1>
-      </div>
-
-      <div>
-        <button>Feed ^</button>
-      </div>
-
-    </div>
-
-    <div class="hamb-wrapper">
-      <label for="check" class="hamb-button"></label>
-      <input id="check" type="checkbox">
-      <div class="display-mobile">
-
-        <div>
-          <div>
-            <h2>DEV Community</h2>
-          </div>
-          <div>
-            <button>X</button>
-          </div>
+        <div class="left-wrap">
+          <img class="display-mobile" src="images/hamburger-icon.svg" alt="hamburger-icon">
+          <img class="logo-icon" src="images/devto.svg" alt="logo-icon">
+          <input class="display-desktop" type="text" placeholder="Search...">
         </div>
-
-        
-
-        <div>
-          <h2><span>DEV Community </span>is a community of 579,464 amazing developers</h2>
-          <p>We're a place where coders share, stay up-to-date and grow their careers.</p>
-          <button class="button-primary">Create a new account</button>
-          <a href="#">Log in</a>
+  
+        <div class="right-wrap">
+          <button class="display-desktop btn-nav">Write a post</button>
+          <img class="display-mobile" src="images/lupa-icon.svg" alt="lupa-icon">
+          <img src="images/message-icon.svg" alt="write-icon">
+          <img src="images/bell-icon.svg" alt="bell-icon">
+          <img class="profile-photo" src="https://res.cloudinary.com/practicaldev/image/fetch/s--jl25ieQ4--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/570253/d305dc25-89e7-4959-bba9-f85ff315a1c7.jpeg" alt="">
         </div>
+  
+      </div>
+    </div>
+    
+
+    <div class="content">
+      <div class="display-mobile wrap-header">
 
         <div>
-          <ul>
+          <h1>Posts</h1>
+        </div>
+  
+        <div>
+          <button>Feed</button>
+        </div>
+  
+      </div>
+  
+    </header>
+  
+  
+    <section>
+  
+      <aside>
+  
+        <div class="display-desktop">
+  
+          <ul class="side-bar">
             <li><img src="images/home-icon.svg" alt="Home"><a href="#">Home</a></li>
-            <li><img src="images/sing-icon.svg" alt="Sign"><a href="#">Sing In/Up</a></li>
+            <li><img src="images/reading-icon.svg" alt="Reading"><a href="">Reading List</a></li>
             <li><img src="images/listings-icon.svg" alt="Listings"><a href="#">Listings</a></li>
             <li><img src="images/podcasts-icon.svg" alt="Podcasts"><a href="#">Podcasts</a></li>
             <li><img src="images/videos-icon.svg" alt="Videos"><a href="#">Videos</a></li>
             <li><img src="images/tags-icon.svg" alt="Tags"><a href="#">Tags</a></li>
-            <li><img src="" alt="More..."><a href="#">More...</a></li>
+            <li><a href="#">More...</a></li>
+          </ul>
+  
+        </div>
+  
+        <div class="my-tags display-desktop">
+  
+          <div class="title">
+            <h3>My Tags</h3>
+            <img src="images/cog-icon.svg" alt="engrane">
+          </div>
+    
+          <div class="tags">
+            <ul>
+              <li><a href="#">&#35Git&Github</a></li>
+              <li><a href="#">&#35HTML5</a></li>
+              <li><a href="#">&#35CSS3</a></li>
+              <li><a href="#">&#35Sass</a></li>
+              <li><a href="#">&#35Bootstrap4</a></li>
+              <li><a href="#">&#35JavaScript</a></li>
+              <li><a href="#">&#35Jquery</a></li>
+              <li><a href="#">&#35AJAX</a></li>
+              <li><a href="#">&#35DOM</a></li>
+            </ul>
+          </div>
+  
+        </div>
+  
+        <div class="display-desktop card-wrapper">
+          <div class="card">
+              <div class="img-wrapper" style="background-image:url('https://res.cloudinary.com/practicaldev/image/fetch/s--oC7-ksvD--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://thepracticaldev.s3.amazonaws.com/i/5nt0fd0h4cbnlve8b9rf.png')"></div>
+              <div class="card-body">
+                  <h3><a>A Book for Juniors Dev🤯</a></h3>
+              </div>
+          </div>
+        </div>
+        
+  
+      </aside>
+  
+      <nav class="display-desktop post-menu">
+  
+        <div class="post">
+          <h1>Posts</h1>
+        </div>
+  
+
+        <!--
+        <div class="frecuency-post">
+          <ul>
+            <li><a href="#">Feed</a></li>
+            <li><a href="#">Week</a></li>
+            <li><a href="#">Month</a></li>
+            <li><a href="#">Year</a></li>
+            <li><a href="#">Infinity</a></li>
+            <li><a href="#">Latest</a></li>
           </ul>
         </div>
+        -->
 
-      </div>
-
-      <div class="logo">
-        <img src="images/logo-icon.svg" alt="Logo">
-      </div>
-
-      <div>
-        <div>
-          <label for="check" class="serch-button"></label>
-          <input id="check" type="checkbox">
-          <img src="" alt="Search">
+        <div class="frecuency-post2">
+          <a class="active" href="#">Feed</a>
+          <a href="#">Week</a>
+          <a href="#">Month</a>
+          <a href="#">Year</a>
+          <a href="#">Infinity</a>
+          <a href="#">Latest</a>
         </div>
-        <div><button class="button-primary">Create account</button></div>
-      </div>
-
-      
-
-    </div>  
-
+  
+      </nav>
+  
+  
+      <article class="display-desktop">
+        <h3>cards cvarias</h3>
+      </article>
+  
+    </section>
     
 
-    <div class="nav-posts">
-
-      <div>
-        <h1>Posts</h1>
-      </div>
-
-      <div>
-
-        <ul>
-          <li><a href="#">Feed</a></li>
-          <li><a href="#">Week</a></li>
-          <li><a href="#">Month</a></li>
-          <li><a href="#">Year</a></li>
-          <li><a href="#">Infinity</a></li>
-          <li><a href="#">Latest</a></li>
-        </ul>
-      </div>
-
     </div>
 
-    <div class="search-menu">
-      <input type="text" placeholder="Search...">
-      <h2>Search results</h2>
-      <div>
-        <ul>
-          <li><a href="#">Most Revelant</a></li>
-          <li><a href="#"></a>Newest</li>
-          <li><a href="#"></a>Oldest</li>
-        </ul>
-      </div>
-      <ul>
-        <li><a href="#">Posts</a></li>
-        <li><a href="#">Podcasts</a></li>
-        <li><a href="#"<>People</a></li>
-        <li><a href="#">Comments</a></li>
-        <li><a href="#">My posts only</a></li>
-      </ul>
-      
-    </div>
+    
+  <script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
 
       
   
-  </header>
+  
 
 
 
